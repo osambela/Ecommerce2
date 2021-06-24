@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-items: center;
+}
+.loading{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1111;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+}
+.item {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+     border-radius: 3px;
+    position: relative; 
+}
+
+.loader12 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    animation: loader 1s linear alternate infinite;
+    top: 50%;
+    margin: -50px auto 0; }
+  
+  @keyframes loader {
+    0% {
+      box-shadow: -60px 40px 0 2px #6FCAA8, 
+                  -30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  0 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  60px 40px 0 0 rgba(35, 130, 95, 0.2); }
+    25% {
+      box-shadow: -60px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  -30px 40px 0 2px #6FCAA8, 
+                  0 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  60px 40px 0 0 rgba(35, 130, 95, 0.2); }
+    50% {
+      box-shadow: -60px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  -30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  0 40px 0 2px #6FCAA8, 
+                  30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  60px 40px 0 0 rgba(35, 130, 95, 0.2); }
+    75% {
+      box-shadow: -60px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  -30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  0 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  30px 40px 0 2px #6FCAA8, 
+                  60px 40px 0 0 rgba(35, 130, 95, 0.2); }
+    100% {
+      box-shadow: -60px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  -30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  0 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  30px 40px 0 0 rgba(35, 130, 95, 0.2), 
+                  60px 40px 0 2px #6FCAA8; } }
+  

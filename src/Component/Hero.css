@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Navbar*/
+
+
+/*Parallax*/
+.zoom{
+    width: 56%;
+    height: 25em;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden;
+    background: url('../images/frutasdeshidratadas-t.jpg');
+    background-size: cover;
+    margin: 0 auto 6rem;
+    border-radius: 8px;
+}
+
+.zoom::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(transparent, #fff);
+    bottom: 0%;
+}
+#img1{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 80%;
+    top: -129%;
+    z-index: 100;
+}
+#img2{
+    position: absolute;
+    z-index: 100;
+    transform: translateX(50%);
+    right: 74%;
+    top: -80%;
+}
+#text_bg{
+    position: absolute;
+    transform: translateY(50%);
+}
+
+.navbarColor{ 
+    color:rgb(111, 202, 168); 
+  } 
+  
+  .navbarColor.colorChange{ 
+    color: rgb(111, 202, 168); 
+  }
+
